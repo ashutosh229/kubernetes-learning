@@ -1,0 +1,16 @@
+pipeline: series of stages which performs some work, it is a type of job only 
+
+pipeline definition: name of the pipeline 
+
+script of the pipeline: the script which runs when the build is triggered for a pipeline job
+it contains the steps which will be executed at each stage of the pipeline and by writing these multiple stages, we 
+make up a pipeline 
+
+script of the pipeline contains components:
+agent: resource which runs the pipeline 
+stages: collection of all the stage definitions which runs when the pipeline is triggered
+stage: a single stage in the stages component of the pipeline script 
+steps: collection of step which takes place in a single stage and we can have multiple steps block in a stage 
+step: a single step inside a steps block and it can be anything (shell command,etc.)
+
+
