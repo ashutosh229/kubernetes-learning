@@ -40,6 +40,8 @@ the ones which will be known after we perform the apply or execution are called 
 after the planning and the dry run is done, it is the time to produce the actual output
 we will apply the .tf file or should be said, that we will execute the .tf file 
 terraform apply is used to execute the file 
+after we get the command, it will ask for approval
+if we want the auto-approval mechanism, use terraform apply --auto-approve
 after the execution is done, we get the actual output produced
 this is the apply step
 
@@ -51,7 +53,8 @@ planning
 apply 
 
 we can also delete the resource 
-terraform destroy 
+terraform destroy (with approval)
+terraform destroy --auto-approve (with no approval)
 
 
 
