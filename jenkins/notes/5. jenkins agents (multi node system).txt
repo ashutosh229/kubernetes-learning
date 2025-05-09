@@ -24,7 +24,15 @@ type of the node (permanent node or not)
 description of the node 
 number of executors (number of jobs which can run in it at once)
 remote root directory (if any references are made during the build to the directory, then this will be treated as the root)
- 
+label (this is basically written after the agent component in the pipeline)
+usage (usage intensity of the node)
+launch method (method via which connection is made to the slave from the master)
+ -launch via connecting it to the controller 
+ -launch via connecting it to the ssh (we will use this)
+  -host: ip of the host or the server on which the slave is hosted 
+
+
+
 
 
 
