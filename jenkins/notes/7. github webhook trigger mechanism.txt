@@ -11,6 +11,26 @@ the build using the GUI of the jenkins master on the master machine, running on 
 if we use the build trigger mechanism via webhooks, we have to push the code to github and then via the webhooks then jenkins 
 will automatically detect the commit/push amd then run the build automatically 
 
+setting up the web hook:
+go to the settings of the repository 
+go to webhooks 
+add webhook 
+give the passkey for verification
+put the jenkins github-webhook api (master machine jenkins url) on the payload url
+disable the ssl 
+in the events type, select the option for everything
+add the final webhook
+
+ensure that the tick is shown for the connection 
+
+now we have to inform the github also that whenever there will be some changes in the github, trigger the build 
+and for this we will be providing the build triggers as github hook trigger via gitscm pooling 
+
+
+
+
+
+
 
 
 
