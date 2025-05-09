@@ -1,0 +1,14 @@
+we dont do everything on the single jenkins server 
+
+in the industry, there is a jenkins server which acts as the master 
+there are other servers/nodes which acts as slaves 
+these slaves, when ordered by the master, perform the jobs 
+therefore, the job is not performed by jenkins but the slave nodes
+which means we write the jobs on slave nodes 
+this is called the master slave architecture
+
+the jenkins master machine need to have jenkins and java both 
+the jenkins agent machine need to have java for running jenkins but dont need jenkins 
+
+the connection between the jenkins master and the slave is maintained via ssh 
+
