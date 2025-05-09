@@ -1,0 +1,50 @@
+the ultimate template:
+<block> <parameters> {
+    <arguments>
+}
+
+block refers to the type of infrastructure component which we are dealing with 
+whether it is a service/resource (resource block) or 
+some sort of output is produced (output block) or 
+some sort of variable is involved (variable block)
+
+parameters refers to the things via which the terraform identifies the block 
+the parameters are type of resource (if resource block), 
+name of the resource via which the terraform can identify it (if resource block),
+etc. 
+
+arguments refers to the configurations of the block i.e., if a resource block, then the configurations of the resource, 
+for e.g., the size of the ec2 instance, the name of the instance, the type of the device wanted, the os image pulled, etc.
+
+there is something called attributes also which we will discuss later
+
+we wrote the .tf file but now we also need terraform to understand it 
+for doing this, we initialize the directory with terraform in which we create the .tf file 
+terraform init command is used to initialize the directory
+initialization of the directory with terraform creates an environment for us which we use for running the .tf files
+this is the initialization step 
+
+after initializing the environment and writing the .tf file, it is time to validate the script 
+terraform validate is used to validate the .tf file 
+this is the validation step but this is optional for experiences devs 
+
+after validation, it is the time to plan things before going into actual production 
+this is like the dry run of a program which we do before submitting 
+terraform plan is used to plan the script
+this is the planning step
+
+coming to attributes, basically when we perform the plan command, the output contains a lot of arguments in it 
+the ones which have been known and configured before the execution are called arguments
+the ones which will be known after we perform the apply or execution are called arguments
+
+
+
+
+
+
+
+
+
+
+
+
