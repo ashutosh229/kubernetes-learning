@@ -1,0 +1,11 @@
+delivery refers to the term in which we have to do some sort of manual labour but deployment refers to the term
+which is fully automated and dont need manual labour 
+
+continuous delivery and deployment are used interchangably 
+
+continuous integration means when the codebase is updated, all the changes should be end-to-end integrated with the end
+user product 
+
+these two (ci and cd) makes up the entire ci/cd pipeline 
+
+jenkins is a tool which helps us to write these ci/cd pipelines and automate the entire work 
