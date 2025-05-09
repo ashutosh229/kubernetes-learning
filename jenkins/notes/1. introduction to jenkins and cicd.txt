@@ -8,4 +8,7 @@ user product
 
 these two (ci and cd) makes up the entire ci/cd pipeline 
 
-jenkins is a tool which helps us to write these ci/cd pipelines and automate the entire work 
+jenkins is a tool which helps us to write these ci/cd pipelines and automate the entire work
+
+
+
