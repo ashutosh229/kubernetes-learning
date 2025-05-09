@@ -1,0 +1,9 @@
+you dont need to change the pipeline always from the jenkins gui 
+
+you can go to the project repository on github 
+make a Jenkinsfile
+write the entire pipeline into the jenkins file 
+
+since the pipeline is present in the jenkins file, we have to inform jenkins about it 
+go to the jenkins and change the pipeline definition from pipeline script to pipeline from scm
+
