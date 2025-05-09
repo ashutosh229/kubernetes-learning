@@ -50,6 +50,11 @@ validation
 planning 
 apply 
 
+we can also delete the resource 
+terraform destroy 
+
+
+
 
 
 
