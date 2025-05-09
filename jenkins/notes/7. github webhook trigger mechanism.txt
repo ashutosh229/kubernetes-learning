@@ -5,6 +5,15 @@ this type of build trigger is called github hook trigger for gitscm pooling
 
 this mechanism of build trigger is carried out by webhooks 
 
+if we do not use the build trigger via webhooks, then we have to first push the code to github and then manually perform 
+the build using the GUI of the jenkins master on the master machine, running on the host machine
+
+if we use the build trigger mechanism via webhooks, we have to push the code to github and then via the webhooks then jenkins 
+will automatically detect the commit/push amd then run the build automatically 
+
+
+
+
 
 
 
