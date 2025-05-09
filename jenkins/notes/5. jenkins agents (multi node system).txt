@@ -10,5 +10,25 @@ this is called the master slave architecture
 the jenkins master machine need to have jenkins and java both 
 the jenkins agent machine need to have java for running jenkins but dont need jenkins 
 
-the connection between the jenkins master and the slave is maintained via ssh 
+the connection between the jenkins master and the slave is maintained via ssh
+the ssh connection between two devices is done via the private and public key 
+we generate the keys on the master device 
+keep the private key on the master device 
+transfer the public key on the slave device
+
+node creation in jenkins master:
+the master itself creates the slave nodes for itself 
+node creation involves multiple steps:
+name of the node
+type of the node (permanent node or not)
+description of the node 
+number of executors (number of jobs which can run in it at once)
+remote root directory (if any references are made during the build to the directory, then this will be treated as the root)
+ 
+
+
+
+
+
+
 
