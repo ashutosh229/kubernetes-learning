@@ -1,0 +1,11 @@
+while dealing with the integration of the github projects with jenkins, it is very important to understand that there 
+should be some mechanim of build trigger via github 
+i mean when the commit is made on the github, the pipeline job build is automatically triggered on the jenkins
+this type of build trigger is called github hook trigger for gitscm pooling 
+
+this mechanism of build trigger is carried out by webhooks 
+
+
+
+
+
