@@ -37,6 +37,24 @@ coming to attributes, basically when we perform the plan command, the output con
 the ones which have been known and configured before the execution are called arguments
 the ones which will be known after we perform the apply or execution are called arguments
 
+after the planning and the dry run is done, it is the time to produce the actual output
+we will apply the .tf file or should be said, that we will execute the .tf file 
+terraform apply is used to execute the file 
+after the execution is done, we get the actual output produced
+this is the apply step
+
+summarizing, the workflow of working with terraform or hcl is:
+write
+initialize
+validation 
+planning 
+apply 
+
+
+
+
+
+
 
 
 
