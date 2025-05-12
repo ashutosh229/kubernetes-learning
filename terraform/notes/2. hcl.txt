@@ -56,6 +56,31 @@ we can also delete the resource
 terraform destroy (with approval)
 terraform destroy --auto-approve (with no approval)
 
+resource local_file my_File {
+    file_name = "automate.txt"
+}
+
+here the resource is the block 
+local_file is the parameter and it is basically the type of resource 
+the local_file contains local and file where local is the provider and file is the component 
+my_file is also a parameter and it is basically the identifier via which we can identify the resource in the .tf file 
+file_name is an argument here and it is basically responsible for maintaining the configuration of the resource 
+
+
+there are a lot of terraform providers
+the folder which you have initialized with terraform, the .terraform folder (config folder) is present there and when you 
+go deep into the terraform folder, you will find the different type of providers folders 
+
+the local provider folder is by default present 
+for making the folders of other providers, write the code for the provider and once again then do the terraform init and it 
+will pull the resource 
+
+there is another way of doing the same
+
+
+
+
+
 
 
 
