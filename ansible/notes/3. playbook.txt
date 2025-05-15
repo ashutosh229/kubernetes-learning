@@ -22,5 +22,7 @@ ansible-playbook date_playbook.yml
 seeing the changes on the nodes:
 1. go the node console and see (we can use the ssh connection for this)
 2. use the playbook command with verbose (verbose shows the things which happens on the terminal)
-ansible-playbook -v date_playbook.yml 
+ansible-playbook -v date_playbook.yml
+
+the end
 
