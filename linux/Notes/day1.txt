@@ -1,0 +1,71 @@
+How does internet works?
+Data centres
+optical fibres 
+companies 
+clients 
+internet servive providers 
+ip addresses 
+
+what is a server?
+any computer which servers something 
+email server
+file server
+db server 
+application server 
+web server
+
+server has the work to serve clients which requests the information 
+
+domain -> ip address(application server) (dns)
+
+web server is for static data 
+application server is for dynamic data 
+
+applications are of two types: standalone,web
+standalone are independent applications 
+web applications are in need of internet 
+
+application support and maintainence 
+
+unix->commercialized and paid os
+linux->free and open source os
+
+using linux:
+1.wsl
+2.vms 
+3.cloud providers
+4.vagrant 
+
+windows->commercial license
+linux->gpl(general public license)
+
+software remote location server tools:
+rdp: remote desktop protocol
+ssh: secure shell
+
+heart of os: kernel
+connector between user and kernel: shell (connection is done using shell commands)
+bootloader: the process in the kernel which loads the os when the system starts 
+applications: which are used to operate the shell
+hardware is operated by the kernel then
+
+everything in the linux file system starts from the root folder
+
+states of processes: running, sleeping, killed, zombie
+
+rm removes file 
+rm -r removes folder 
+rmdir removes folder
+touch->creates file
+cat->prints the file content
+echo->writes the file content 
+zcat->prints the content for the zip file 
+head->reads the first 5 lines 
+tail->reads the last 5 lines
+
+cp <source> <dest> -> copies the file
+mv <source> <dest> -> moves the file 
+
+
+
+
