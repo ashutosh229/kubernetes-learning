@@ -1,7 +1,18 @@
+current_user@machine_name:(path)$ --> this is the shell representation for the linux based systems 
+machine_name can be configured or denoted by the ip of the machine 
+(path) is the current path in which we are present 
+~ is the folder of our current user
+from ~ we can navigate further 
+
+
+
+
+
 system level commands:
 uname: provides the name of the parent operating system for the flavour which we are using
 uptime: provides the uptime of the system
 date: provides the date for now
 who: provides the information of all the users present on the machine
 whoami: provides the information of the current user present on the machine
+which <software>: provides the path of the sotfware in the system
 
