@@ -39,6 +39,14 @@ ansible servers -m ping is the module command for pinging the machines in the gr
 now the servers are pinged, we can on the master machine, executes the commands on the slave machines
 ansible servers -a "free -h" is an ad hoc command which is used to execute the command "free -h" on all the hosts of the group "servers"
 
+ansible servers -a "sudo apt update"
+
+ansible-inventory --list : this command lists down all the inventory which we have with us for the master machine 
+
+
+
+
+
 
 
 
