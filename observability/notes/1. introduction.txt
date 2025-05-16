@@ -1,0 +1,19 @@
+observability contains the different aspects like monitoring, logging, tracing, alerting, for an application 
+
+monitoring defines the different aspects which we monitor for our application via a tool 
+logging refers to the collection of all the logs for the application
+tracing refers to the sequential following of the logs and reaching the error and then solving it 
+alerting refers to the process in which the tool alerts us in case of any anomaly occurs in the application 
+
+there are tools which helps us to visualize all these aspects,for an application
+the tools are:
+prometheus: helps us to track the monitoring, logging, tracing
+grafana: helps us to monitor these aspects in the form of a dashboard
+
+prometheus is a time series database 
+it has a scraping server which constantly scrapes the data from the application
+it has a query server which queries the scraped data into the database and then the data is stored there in the form of a time series 
+therefore, prometheus is a time series based database 
+then the prometheus gives this time series based data to the grafana 
+grafana thens makes dashboards and plots for this data and provides us visualization for the data 
+
