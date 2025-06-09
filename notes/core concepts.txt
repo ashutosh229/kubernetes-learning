@@ -15,7 +15,17 @@ need of orchestration:
 
 some terms:
 -node = single server/computer/machine 
--cluster = multiple nodes or a group of machines or computers 
+-cluster = multiple nodes or a group of machines or computers
+-slave node = dependent node, which is run by some other node 
+-master node = independent node, which is responsible for running the other nodes 
+-pod: inside a slave node, there are a lot of docker containers running and the group of these containers is called pod
+-API Server: communication gateway, keeping care of the communication happening between the slave nodes and the master 
+-Scheduler: schedules the docker containers according to the need of the system
+-etcd: a database containing the information about everything related to the docker containers 
+-
+
+
+
 
 
 
