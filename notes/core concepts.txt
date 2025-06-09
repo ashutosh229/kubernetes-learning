@@ -1,3 +1,25 @@
+history:
+-2000s: google system crashes
+-2014: google launched borg which could auto heal the applications, scale them, distribute the load, etc
+-2014: borg was made open source and then turned into "kubernetes", also called "k8s"
+-present: kubernetes is used for the orchestration of docker containers 
+
+orchestration tool:
+-handling and managing the docker containers in an environment which allows them to communicate with eact other, heal them, 
+auto scale, load distribution, etc. 
+
+need of orchestration:
+-we slowly move from monolith from microservice in order to have advantages 
+-for managing a microservice architecture, we will have to manage all the applications and services in it 
+-managing all the services in the architecture, which are in the form of docker containers, will require some orchestration tool 
+
+some terms:
+-node = single server/computer/machine 
+-cluster = multiple nodes or a group of machines or computers 
+
+
+
+
 monolithic versus microservices 
 
 architecture of kubernetes 
