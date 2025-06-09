@@ -1,2 +1,16 @@
 monolithic versus microservices 
 
+architecture of kubernetes 
+
+kubernetes cluster making ways:
+kubeadm 
+minikube 
+kind cluster 
+eks/aks/gke
+
+
+
+
+
+
+
