@@ -14,15 +14,28 @@ need of orchestration:
 -managing all the services in the architecture, which are in the form of docker containers, will require some orchestration tool 
 
 some terms:
--node = single server/computer/machine 
+-node = single server/computer/machine
 -cluster = multiple nodes or a group of machines or computers
 -slave node = dependent node, which is run by some other node 
 -master node = independent node, which is responsible for running the other nodes 
 -pod: inside a slave node, there are a lot of docker containers running and the group of these containers is called pod
+
+components of master node:
 -API Server: communication gateway, keeping care of the communication happening between the slave nodes and the master 
 -Scheduler: schedules the docker containers according to the need of the system
--etcd: a database containing the information about everything related to the docker containers 
--
+-etcd: a database containing the information about everything related to the docker containers and everything else 
+which is present on the kubernetes
+-Controller Manager: Sees whether everything is going on fine or what 
+
+components of slave node:
+-kubelet: manages the containers running in the node and other services, at the slave node level 
+-service proxy: the docker containers are isolated from the outside world and we cant access them as a user directly, when we 
+need to access them as an outside user, we use a service called service proxy
+
+
+
+
+
 
 
 
