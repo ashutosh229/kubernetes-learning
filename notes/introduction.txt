@@ -32,6 +32,29 @@ components of slave node:
 -service proxy: the docker containers are isolated from the outside world and we cant access them as a user directly, when we 
 need to access them as an outside user, we use a service called service proxy
 
+communication between the nodes:
+-we already know about the components of both the type of nodes and also that they communicate via API server 
+-but on which network do they communicate?
+-they communicate on a network called CNI Network i.e. Container Network Interface Network 
+-examples of such network includes Calico, Weave Net
+
+overall control of the system:
+-since API server takes care of the control for the entire system, we also need someone to direct 
+the API server so that we can control the entire system from the top 
+-this work is done by the kubectl i.e. kube controller, which controls the entire system 
+-this entire system containing the master node, slave nodes cluster, kubectl, user, is called the whole kubernetes cluster
+
+making the kubernetes cluster:
+-there are a lot of ways of doing so
+kubeadm
+minikube(local) 
+kind cluster(docker method)
+eks/aks/gke(cloud method) 
+-but we will be making the KIND cluster 
+-kubernetes in docker 
+-for this we have to install:
+    -docker, via which we will be running the kubernetes
+    -kind, via which is the kit in which kubernetes is present
 
 
 
@@ -43,15 +66,7 @@ need to access them as an outside user, we use a service called service proxy
 
 
 
-monolithic versus microservices 
 
-architecture of kubernetes 
-
-kubernetes cluster making ways:
-kubeadm 
-minikube 
-kind cluster 
-eks/aks/gke
 
 
 
